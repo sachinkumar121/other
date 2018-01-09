@@ -1,0 +1,125 @@
+/* Remove margins and padding from the list */
+ul#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul#myUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+      margin-bottom: 7px;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul#myUL li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul#myUL li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul#myUL li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul#myUL li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* thread cont box */
+
+ul#myUL ul.taskNotes {
+    background-color: #f5f5f5;
+    text-align: left;
+    border-left: 2px solid #000;
+    padding-left: 0px;
+    margin-left: 30px;
+
+}
+ul#myUL ul.taskNotes > li {
+    font-size: 14px !important;
+    font-style: italic;
+    color: #000;
+        margin-bottom: 0px;
+}
+ul#myUL ul.taskNotes > li:nth-child(even) {
+    background-color:rgba(0,0,0,.1);
+
+  }
+ul#myUL ul.taskNotes > li:nth-child(odd) {
+    background-color:rgba(0,0,0,.2);
+
+  }
+  p.task_description {
+    text-align: left;
+    padding-left: 30px;
+}
+span.no_desc{
+   font-style: italic;
+    color: #ccc;
+}
+
+/* Style the input */
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  width: 25%;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  float: left;
+  cursor: pointer;
+  box-shadow: none;
+  border: 0;
+  border-radius: 5px;
+
+      display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+}
+
+.addBtn:hover {
+   background-color: #337ab7;
+    border-color: #2e6da4;
+}
